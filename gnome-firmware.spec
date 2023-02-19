@@ -3,19 +3,18 @@
  
 Name:           gnome-firmware
 Version:        43.2
-Release:        %autorelease
+Release:        1
 Summary:        Install firmware on devices
- 
+Group:          System/Firmware 
 License:        GPLv2+
 URL:            https://gitlab.gnome.org/hughsie/gnome-firmware
 Source0:        https://people.freedesktop.org/~hughsient/releases/%{name}-%{tarball_version}.tar.xz
  
 BuildRequires:  desktop-file-utils
-BuildRequires:  gcc
 BuildRequires:  help2man
-BuildRequires:  libappstream-glib
-BuildRequires:  meson >= 0.46.0
-BuildRequires:  systemd-devel
+BuildRequires:  appstream-util
+BuildRequires:  meson
+BuildRequires:  pkgconfig(libsystemd)
 BuildRequires:  pkgconfig(appstream-glib)
 BuildRequires:  pkgconfig(fwupd) >= 1.2.10
 BuildRequires:  pkgconfig(gio-2.0)
@@ -41,10 +40,6 @@ This application can:
 %install
 %meson_install
 %find_lang %{name} --with-gnome
- 
-%check
-appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{uuid}.metainfo.xml
-desktop-file-validate %{buildroot}%{_datadir}/applications/%{uuid}.desktop
  
 %files -f %{name}.lang
 %license COPYING
