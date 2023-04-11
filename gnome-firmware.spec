@@ -3,7 +3,7 @@
  
 Name:           gnome-firmware
 Version:        43.2
-Release:        2
+Release:        3
 Summary:        Install firmware on devices
 Group:          System/Firmware 
 License:        GPLv2+
