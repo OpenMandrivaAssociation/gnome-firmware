@@ -9,7 +9,8 @@ Group:          System/Firmware
 License:        GPLv2+
 URL:            https://gitlab.gnome.org/hughsie/gnome-firmware
 Source0:        https://people.freedesktop.org/~hughsient/releases/%{name}-%{tarball_version}.tar.xz
- 
+
+BuildRequires:  gettext
 BuildRequires:  desktop-file-utils
 BuildRequires:  help2man
 BuildRequires:  appstream-util
