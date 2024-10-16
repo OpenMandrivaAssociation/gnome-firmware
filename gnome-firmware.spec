@@ -3,7 +3,7 @@
  
 Name:           gnome-firmware
 Version:        46.0
-Release:        1
+Release:        2
 Summary:        Install firmware on devices
 Group:          System/Firmware 
 License:        GPLv2+
