@@ -2,8 +2,8 @@
 %global tarball_version %%(echo %{version} | tr '~' '.')
  
 Name:           gnome-firmware
-Version:        46.0
-Release:        2
+Version:        47.0
+Release:        1
 Summary:        Install firmware on devices
 Group:          System/Firmware 
 License:        GPLv2+
