@@ -48,5 +48,6 @@ This application can:
 %{_bindir}/%{name}
 %{_datadir}/applications/*.desktop
 %{_datadir}/icons/hicolor/*/*/*.svg
+%{_datadir}/glib-2.0/schemas/org.gnome.Firmware.gschema.xml
 %{_mandir}/man1/*.1.*
 %{_metainfodir}/*.xml
